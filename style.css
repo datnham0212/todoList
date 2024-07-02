@@ -1,0 +1,101 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.tab {
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 20vh;
+    border-radius: 150px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.tabButton {
+    text-align: center;
+    justify-content:space-around;
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    width: 45%;
+    height: 60%;
+    margin-top: 25px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 150px;
+}
+
+.tabButton:hover {
+    background-color: rgb(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+
+#todo-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#randowheel-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.todo-frame {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-180%);
+    width: 99%;
+    height: 20%;
+    border: 2px solid rgb(0, 0, 0);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom: transparent;
+}
+
+.list-frame {
+    position: relative;
+    width: 1335px;
+    height: 100vh;
+    transform: translateY(23%);
+    border: 2px solid rgb(0, 0, 0);
+    border-top: transparent;
+    border-end-end-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#task-input {
+    font-size: larger;
+    width: 500px;
+    height: 50px;
+}
+
+#task-button {
+    background-color: limegreen;
+    width: 2cm;
+    height: 1cm;
+    margin-left: 0.8cm;
+    cursor: pointer;
+}
+
+#no_of_task {
+    margin-left: 1.5cm;
+}
+
+

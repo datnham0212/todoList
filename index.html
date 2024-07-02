@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shits to do</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class = "tab"> 
+        <button class = "tabButton" onclick="switch_tab(event, 'todo-tab')" id = 'defaultTab'>Todo list</button>
+        <button class = "tabButton" onclick="switch_tab(event, 'randowheel-tab')">Rando Wheel</button>
+    </div>
+
+    <div class = "content-container">
+        <div class = "content" id = "todo-tab">
+            <div class = "todo-frame">
+                <input type="text" id = "task-input" placeholder="Enter a task: ">
+                <button id = "task-button" onclick="add_task()">Add</button>
+                <p id="no_of_task">Number of tasks: <div id = "task-count" onchange="incrementTask()"> </div></p>
+            </div> 
+
+            <div class = "list-frame">
+                <ul id = "todo-list"></ul>
+            </div>
+        
+        </div>
+
+        <div class = "content" id = "randowheel-tab">
+            <h1>(Wheel of fortune)</h1>
+        </div>
+    </div>
+</body>
+
+<script>
+    function switch_tab(event, tabName) {
+        var i, tabButton, content;
+        content = document.getElementsByClassName('content');
+
+        for (i = 0; i < content.length; i++) {
+            content[i].style.display = 'none';
+        }
+
+
+        tabButton = document.getElementsByClassName('tab-button');
+
+        for (i = 0; i < tabButton.length; i++) {
+            tabButton[i].className = tabButton[i].className.replace('active', '');
+        }
+
+        document.getElementById(tabName).style.display = 'flex';
+        event.currentTarget.className += ' active';
+    }
+    document.getElementById('defaultTab').click();
+    
+</script>
+
+</html>
+
+
+
+
+
