@@ -73,7 +73,7 @@ body {
 .list-frame {
     position: relative;
     width: 1335px;
-    height: 300vh;
+    height: 150vh;
     transform: translateY(23%);
     border: 2px solid rgb(0, 0, 0);
     border-top: transparent;
